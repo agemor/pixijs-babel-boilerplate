@@ -1,31 +1,37 @@
 {
-  "name": "the-q",
+  "name": "pixijs-babel-webpack-boilerplate",
   "version": "1.0.0",
-  "description": "The Q",
-  "main": "index.js",
+  "description": "Boilerplate for pixijs with babel settings",
+  "main": "./src/entry.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --hot --host 0.0.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agemor/the-q.git"
+    "url": "git+https://github.com/agemor/pixijs-babel-boilerplate.git"
   },
+  "keywords": [
+    "pixijs",
+    "babel",
+    "webpack",
+    "boilerplate"
+  ],
   "author": "HyunJun Kim",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/agemor/the-q/issues"
+    "url": "https://github.com/agemor/pixijs-babel-webpack-boilerplate/issues"
   },
-  "homepage": "https://github.com/agemor/the-q#readme",
+  "homepage": "https://github.com/agemor/pixijs-babel-webpack-boilerplate#readme",
+  "dependencies": {
+    "pixi.js": "^4.6.1"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.1",
-    "babel-preset-es2015": "^6.24.1",
-    "copy-webpack-plugin": "^4.0.1",
-    "webpack": "^2.7.0",
-    "webpack-dev-server": "^2.7.1"
-  },
-  "dependencies": {
-    "pixi.js": "^4.5.4"
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "copy-webpack-plugin": "^4.2.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
   }
 }

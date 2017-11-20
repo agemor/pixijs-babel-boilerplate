@@ -1,10 +1,9 @@
 import * as Pixi from "Pixi.js";
 
-export default class QCanvas {
+export default class Canvas {
 
     constructor(width, height) {
 
-        // 캔버스 사이즈
         this.width = width;
         this.height = height;
         this.ratio = width / height;
@@ -12,7 +11,6 @@ export default class QCanvas {
         this.displayWidth = width;
         this.displayHeight = height;
 
-        // 랜더러
         this.renderer = Pixi.autoDetectRenderer(width, height, {
             backgroundColor: 0xFFFF00,
             antialias: false,
@@ -21,7 +19,7 @@ export default class QCanvas {
             autoResize: true,
         });
 
-        // 화면 갱신을 위한 타이머
+        // Timer for real-time page update
         this.ticker = new Pixi.ticker.Ticker();
         this.ticker.start();
         this.ticker.add(() => {

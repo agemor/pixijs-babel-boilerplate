@@ -1,6 +1,6 @@
 import * as Pixi from "Pixi.js";
-import QCanvas from "./QCanvas.js";
+import Canvas from "./Canvas.js";
 
-let canvas = new QCanvas(512, 512);
+let canvas = new Canvas(512, 512);
 
 document.body.appendChild(canvas.getDOMElement());
